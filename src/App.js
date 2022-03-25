@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React velem
+          Learn React velem is
         </a>
       </header>
     </div>
