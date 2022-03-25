@@ -5,7 +5,8 @@ import Heading from "../../components/access/Heading";
 import Section from "../../components/access/Section";
 
 function AboutUs() {
-    return <>
+    return (
+    <>
         <Container>
             <Heading>Rólunk</Heading>
             <Section cls="mode-content">
@@ -13,6 +14,7 @@ function AboutUs() {
             </Section>
         </Container>
     </>
+    );
 }
 
 export default AboutUs;

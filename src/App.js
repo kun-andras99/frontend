@@ -5,14 +5,14 @@ import AboutUs from "./pages/home/AboutUs";
 import Index from "./pages/home/Index";
 
 function App() {
-	return <>
-	<Routes>
-		<Route path="/" element={<Layout />}>
-			<Route path="/" element={<Index />} />
-			<Route path="/about-us" element={<AboutUs />} />
-		</Route>
-	</Routes>
-	</>
+	return (
+		<Routes>
+			<Route path="/" element={<Layout />}>
+				<Route path="/" element={<Index />} />
+				<Route path="/about-us" element={<AboutUs />} />
+			</Route>
+		</Routes>
+	);
 }
 
 export default App;

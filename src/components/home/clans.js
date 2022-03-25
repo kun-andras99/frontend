@@ -1,9 +1,11 @@
 import React from "react";
 
 function Clans(props) {
-    return <ul>
-        {props.children}
-    </ul>
+    return (
+        <ul>
+            {props.children}
+        </ul>
+    );
 }
 
 export default Clans;

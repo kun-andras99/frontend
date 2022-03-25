@@ -4,12 +4,14 @@ import MobileMenuContainer from "../components/bottom/MobileMenuContainer";
 import Header from "../components/site/Header";
 
 function Layout(props) {
-    return <>
-        <Header />
-        {props.children}
-        <MobileMenuContainer />
-        <Outlet />
-    </>
+    return (
+        <>
+            <Header />
+            {props.children}
+            <MobileMenuContainer />
+            <Outlet />
+        </>
+    );
 }
 
 export default Layout;

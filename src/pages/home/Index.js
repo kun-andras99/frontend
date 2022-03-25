@@ -7,7 +7,8 @@ import Text from "../../components/access/Text";
 import Span from "../../components/access/Span";
 
 function Index() {
-    return <>
+    return (
+    <>
         <Container>
             <Heading>Kezdőlap</Heading>
             <Section cls="mode-content">
@@ -17,6 +18,7 @@ function Index() {
             </Section>
         </Container>
     </>
+    );
 }
 
 export default Index;
