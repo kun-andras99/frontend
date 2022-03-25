@@ -1,0 +1,53 @@
+:root {
+    --primary-blue: #058df3;
+    --secondary-blue: #3F51B5;
+    --primary-orange: #FF5722;
+
+    --fill: #dbdbdb;
+}
+
+body.dark-mode {
+    --site-bg: #121212;
+    --header-bg: #080808;
+    --main-bg: transparent;
+    --main-color: #8e8e8e;
+
+    --mode-content-bg: #222222;
+    --mode-content-color: #c6c6c6;
+
+    --dark-35: #353535;
+    --dark-31: #313131;
+    --dark-29: #292929;
+    --dark-0c: #0c0c0c;
+
+    --shadow-0d: #0d0d0d;
+    --shadow-0c9: #0c0c0cd9;
+
+    --filter-b1: brightness(70%);
+    --filter-b2: brightness(130%);
+    
+    --fill-toggle: #c9c9c9;
+}
+
+body.light-mode {
+    --site-bg: #dfdfdf;
+    --header-bg: #080808;
+    --main-bg: transparent;
+    --main-color: #6d6d6d;
+
+    --dark-35: #f0f0f0;
+    --dark-31: #cccccc;
+    --dark-29: #c7c7c7;
+    --dark-0c: #d6d6d6;
+
+    --mode-content-bg: #f0f0f0;
+    --mode-content-color: #505050;
+
+    --shadow-0d: #cccccc;
+    --shadow-0c9: #f1f1f1d9;
+
+    --filter-b1: brightness(45%);
+    --filter-b2: brightness(110%);
+
+    --fill-toggle: #292929;
+}
