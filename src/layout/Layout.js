@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import MobileMenuContainer from "../components/bottom/MobileMenuContainer";
 import Header from "../components/site/Header";
 
 class Layout extends React.Component {
@@ -7,6 +8,7 @@ class Layout extends React.Component {
         return <>
             <Header />
             {this.props.children}
+            <MobileMenuContainer />
             <Outlet />
         </>
     }
