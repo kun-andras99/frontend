@@ -1,8 +1,11 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../../constans/constans";
 import Section from "../access/Section";
+import Line from "./mobil-menu/Line";
+import MobileButton from "./mobil-menu/MobileButton";
 
-function MobileMenuContainer(props) {
+function MobileMenuContainer() {
 
     const [open, setOpen] = useState(false);
     const toggle = useCallback(() => setOpen(openAt => !openAt), [setOpen]);
@@ -16,7 +19,7 @@ function MobileMenuContainer(props) {
             <ul>
                 <li>
                 <section className="mm">
-                    <a href="https://discord.com/invite/sHTTVHvxAv" onClick={hide}>Discord chat</a>
+                    <a href="https://discord.com/invite/sHTTVHvxAv" onClick={hide} target="_blank">Discord chat</a>
                     <Link to="/" onClick={hide}>Kezdőlap</Link>
                     <Link to="/" onClick={hide}>Szabályok</Link>
                     <Link to="/" onClick={hide}>Útmutató</Link>
@@ -116,10 +119,10 @@ function MobileMenuContainer(props) {
             </ul>
             </li>
         </ul>
-        <div onClick={toggle} id="mobile-menu-button" className={open ? "hamburger-button-container hamburger-button-container-close" : "hamburger-button-container"}>
-            <Section cls="line1" />
-            <Section cls="line2" />
-        </div>
+        <MobileButton toggle={toggle} open={open}>
+            <Line cls="line1" />
+            <Line cls="line2" />
+        </MobileButton>
         </nav>
   </nav>
 }
