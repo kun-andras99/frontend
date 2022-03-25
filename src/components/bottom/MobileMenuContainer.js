@@ -13,7 +13,7 @@ function MobileMenuContainer() {
     const toggle = useCallback(() => setOpen(openAt => !openAt), [setOpen]);
     const hide = () => setOpen(false);
 
-    const homeItems = [
+    const items = [
         "Kezdőlap",
         "Szabályok",
         "Útmutató",
@@ -37,7 +37,7 @@ function MobileMenuContainer() {
         <nav className="mobile-menu-fix">
             <nav className="mobile-menu">
             <ul className={open ? "mobile-menu-items mobile-menu-items-open" : "mobile-menu-items"}>
-                <Links link={homeLinks} icon="home" items={homeItems} click={hide} discord="https://discord.com/invite/sHTTVHvxAv" hide={hide} />
+                <Links icon="home" links={homeLinks} items={items} click={hide} discord="https://discord.com/invite/sHTTVHvxAv" hide={hide} />
                 <li className="mobile-menu-item">
                 <span role="button"><img className="mobile-menu-icon" src={BASE_URL + '/assets/img/icons/mission-icon.png'} /></span>
                 {/* <Links click={hide} /> */}

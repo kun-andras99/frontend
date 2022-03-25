@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BASE_URL } from "../../../../constans/constans";
 
 function Links(props) {
-    console.log(props);
+    console.log(props.items);
     return (
         <li className="mobile-menu-item">
             <span role="button"><img className="mobile-menu-icon" src={BASE_URL + `/assets/img/icons/${props.icon}-icon.png`} /></span>
