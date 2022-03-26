@@ -7,7 +7,7 @@ function Header() {
         // <header>
         //     <Link to="/">Kezdőlap</Link>
         //     <Link to="/about-us">Rólunk</Link>
-        // </header>
+        // </header>np
     );
 }
 

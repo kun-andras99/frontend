@@ -5,6 +5,7 @@ function ToggleMode() {
     const [darkMode, setDarkMode] = useState(false);
 
     const ActiveMode = async () => {
+        setDarkMode(!darkMode);
         const body = document.body;
 
         if (darkMode === true) {
@@ -26,7 +27,7 @@ function ToggleMode() {
             body.classList.add('dark-mode');
             setDarkMode(!darkMode);
         }
-    }, []);
+    }, [darkMode]);
 
     return (
         <div className="toggle-mode" onClick={ActiveMode}>
