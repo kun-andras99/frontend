@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import AuthLinks from "../components/bottom/AuthLinks";
 import MobileMenuContainer from "../components/bottom/MobileMenuContainer";
-import ToggleMode from "../components/bottom/ToggleMode";
+// import Toggle from "../components/bottom/mode/Toggle";
 import Header from "../components/site/Header";
 
 function Layout(props) {
@@ -12,7 +12,7 @@ function Layout(props) {
             {props.children}
             <MobileMenuContainer />
             <AuthLinks />
-            <ToggleMode />
+            {/* <Toggle /> */}
             <Outlet />
         </>
     );
