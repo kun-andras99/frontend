@@ -10,7 +10,10 @@ import FixMenu from "./mobil-menu/FixMenu";
 function MobileMenuContainer() {
 
     const [open, setOpen] = useState(false);
-    const toggle = useCallback(() => setOpen(openAt => !openAt), [setOpen]);
+    const toggle = useCallback(
+        () => setOpen(openAt => !openAt),
+        [setOpen],
+    );
     const hide = () => setOpen(false);
 
     return (
