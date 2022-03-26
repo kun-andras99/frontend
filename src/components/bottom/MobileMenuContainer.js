@@ -19,7 +19,7 @@ function MobileMenuContainer() {
     return (
         <FixMenu>
             <MenuSlide open={open}>
-                <MenuItem icon="home">
+                <MenuItem icon="home" alt="1" title="1">
                     <MenuContainer cls="home">
                         <MenuLink url="/" hide={hide}>Kezdőlap</MenuLink>
                         <MenuLink url="/" hide={hide}>Szabályok</MenuLink>
@@ -28,7 +28,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Oldaltérkép</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="mission">
+                <MenuItem icon="mission" alt="1" title="1">
                     <MenuContainer cls="mission">
                         <MenuLink url="/" hide={hide}>Akadémia</MenuLink>
                         <MenuLink url="/" hide={hide}>Edzés</MenuLink>
@@ -39,7 +39,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Kage torony</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="hokage">
+                <MenuItem icon="hokage" alt="1" title="1">
                     <MenuContainer cls="hokage">
                         <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
                         <MenuLink url="/" hide={hide}>Munkák</MenuLink>
@@ -48,7 +48,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="city">
+                <MenuItem icon="city" alt="1" title="1">
                     <MenuContainer cls="city">
                         <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
                         <MenuLink url="/" hide={hide}>Munkák</MenuLink>
@@ -57,7 +57,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="jutsu">
+                <MenuItem icon="jutsu" alt="1" title="1">
                     <MenuContainer cls="jutsu">
                         <MenuLink url="/" hide={hide}>Elsődleges elemi technikák</MenuLink>
                         <MenuLink url="/" hide={hide}>Másodlagos elemi technikák</MenuLink>
@@ -67,7 +67,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Vérvonal képességek</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="weapon">
+                <MenuItem icon="weapon" alt="1" title="1">
                     <MenuContainer cls="weapon">
                         <MenuLink url="/" hide={hide}>Fegyverek</MenuLink>
                         <MenuLink url="/" hide={hide}>Bábok</MenuLink>
@@ -76,7 +76,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/" hide={hide}>Legendás felszerelések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem icon="ranklist">
+                <MenuItem icon="ranklist" alt="1" title="1">
                     <MenuContainer cls="ranklist">
                         <MenuLink url="/" hide={hide}>Karakterek</MenuLink>
                         <MenuLink url="/" hide={hide}>Lakhelyek</MenuLink>
