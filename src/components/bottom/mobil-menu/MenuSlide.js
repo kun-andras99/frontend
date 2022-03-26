@@ -1,6 +1,6 @@
 import React from "react";
 
-function PopupMenu(props) {
+function MenuSlide(props) {
     return (
         <ul className={props.open ? "mobile-menu-items mobile-menu-items-open" : "mobile-menu-items"}>
             {props.children}
@@ -8,4 +8,4 @@ function PopupMenu(props) {
     );
 }
 
-export default PopupMenu;
+export default MenuSlide;

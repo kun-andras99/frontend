@@ -1,6 +1,6 @@
 import React from "react";
 
-function Menu(props) {
+function FixMenu(props) {
     return (
         <nav className="mobile-menu-fix">
             <nav className="mobile-menu">
@@ -10,4 +10,4 @@ function Menu(props) {
     );
 }
 
-export default Menu;
+export default FixMenu;

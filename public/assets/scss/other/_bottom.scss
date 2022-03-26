@@ -1,0 +1,104 @@
+.img-character-profile {
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
+}
+
+.sun-svg {
+    width: 28px;
+    height: auto;
+    padding: 5px;
+    fill: var(--fill-toggle);
+}
+
+.moon-svg {
+    width: 32px;
+    height: auto;
+    padding: 5px;
+    fill: var(--fill-toggle);
+}
+
+#svg {
+    width: 21px;
+    height: auto;
+    fill: var(--fill);
+}
+
+.auth-container {
+    display: inline-grid;
+    grid-template-columns: 36px 36px;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+
+    .login-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 3px;
+        box-shadow: 0 0 3px 1px var(--shadow-0d);
+        background: var(--secondary-blue);
+        &:hover {
+            cursor: pointer;
+            filter: brightness(80%);
+            transition: all .15s ease;
+        }
+    }
+    
+    .register-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 3px;
+        box-shadow: 0 0 3px 1px var(--shadow-0d);
+        background: var(--primary-orange);
+        &:hover {
+            cursor: pointer;
+            filter: brightness(80%);
+            transition: all .15s ease;
+        }
+    }
+}
+
+.toggle-mode {
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
+}
+
+body.dark-mode {
+    .toggle-mode {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        bottom: 25px;
+        right: 43px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--dark-31);
+    }
+}
+
+body.light-mode {
+    .toggle-mode {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        bottom: 25px;
+        right: 43px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--dark-31);
+    }
+}

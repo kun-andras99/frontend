@@ -1,12 +1,11 @@
 import React, { useCallback, useState } from "react";
-import Line from "./mobil-menu/Line";
+import ButtonLine from "./mobil-menu/ButtonLine";
 import MenuContainer from "./mobil-menu/MenuContainer";
 import MobileButton from "./mobil-menu/MobileButton";
-import MenuContainerLink from "./mobil-menu/MenuContainerLink";
-import IconButton from "./mobil-menu/IconButton";
+import MenuLink from "./mobil-menu/MenuLink";
 import MenuItem from "./mobil-menu/MenuItem";
-import PopupMenu from "./mobil-menu/PopupMenu";
-import Menu from "./mobil-menu/Menu";
+import MenuSlide from "./mobil-menu/MenuSlide";
+import FixMenu from "./mobil-menu/FixMenu";
 
 function MobileMenuContainer() {
 
@@ -15,86 +14,79 @@ function MobileMenuContainer() {
     const hide = () => setOpen(false);
 
     return (
-        <Menu>
-            <PopupMenu open={open}>
-                <MenuItem>
-                    <IconButton icon="home" />
+        <FixMenu>
+            <MenuSlide open={open}>
+                <MenuItem icon="home">
                     <MenuContainer cls="home">
-                        <MenuContainerLink url="/" hide={hide}>Kezdőlap</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Szabályok</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Útmutató</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Kapcsolat</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Oldaltérkép</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Kezdőlap</MenuLink>
+                        <MenuLink url="/" hide={hide}>Szabályok</MenuLink>
+                        <MenuLink url="/" hide={hide}>Útmutató</MenuLink>
+                        <MenuLink url="/" hide={hide}>Kapcsolat</MenuLink>
+                        <MenuLink url="/" hide={hide}>Oldaltérkép</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="mission" />
+                <MenuItem icon="mission">
                     <MenuContainer cls="mission">
-                        <MenuContainerLink url="/" hide={hide}>Akadémia</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Edzés</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Aréna</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>NPC harc</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>PVP harc</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Elem tanulása</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Kage torony</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Akadémia</MenuLink>
+                        <MenuLink url="/" hide={hide}>Edzés</MenuLink>
+                        <MenuLink url="/" hide={hide}>Aréna</MenuLink>
+                        <MenuLink url="/" hide={hide}>NPC harc</MenuLink>
+                        <MenuLink url="/" hide={hide}>PVP harc</MenuLink>
+                        <MenuLink url="/" hide={hide}>Elem tanulása</MenuLink>
+                        <MenuLink url="/" hide={hide}>Kage torony</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="hokage" />
+                <MenuItem icon="hokage">
                     <MenuContainer cls="hokage">
-                        <MenuContainerLink url="/" hide={hide}>Küldetések</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Munkák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Speciális küldetések</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Fejvadászatok</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Kitüntetések</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
+                        <MenuLink url="/" hide={hide}>Munkák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Speciális küldetések</MenuLink>
+                        <MenuLink url="/" hide={hide}>Fejvadászatok</MenuLink>
+                        <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="city" />
+                <MenuItem icon="city">
                     <MenuContainer cls="city">
-                        <MenuContainerLink url="/" hide={hide}>Küldetések</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Munkák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Speciális küldetések</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Fejvadászatok</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Kitüntetések</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
+                        <MenuLink url="/" hide={hide}>Munkák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Speciális küldetések</MenuLink>
+                        <MenuLink url="/" hide={hide}>Fejvadászatok</MenuLink>
+                        <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="jutsu" />
+                <MenuItem icon="jutsu">
                     <MenuContainer cls="jutsu">
-                        <MenuContainerLink url="/" hide={hide}>Elsődleges elemi technikák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Másodlagos elemi technikák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Harmadlagos elemi technikák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Egyéb technikák</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Kekkei Genkai</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Vérvonal képességek</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Elsődleges elemi technikák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Másodlagos elemi technikák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Harmadlagos elemi technikák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Egyéb technikák</MenuLink>
+                        <MenuLink url="/" hide={hide}>Kekkei Genkai</MenuLink>
+                        <MenuLink url="/" hide={hide}>Vérvonal képességek</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="weapon" />
+                <MenuItem icon="weapon">
                     <MenuContainer cls="weapon">
-                        <MenuContainerLink url="/" hide={hide}>Fegyverek</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Bábok</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Egyedi felszerelések</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>A Köd Hét Kardja</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Legendás felszerelések</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Fegyverek</MenuLink>
+                        <MenuLink url="/" hide={hide}>Bábok</MenuLink>
+                        <MenuLink url="/" hide={hide}>Egyedi felszerelések</MenuLink>
+                        <MenuLink url="/" hide={hide}>A Köd Hét Kardja</MenuLink>
+                        <MenuLink url="/" hide={hide}>Legendás felszerelések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-                <MenuItem>
-                    <IconButton icon="ranklist" />
+                <MenuItem icon="ranklist">
                     <MenuContainer cls="ranklist">
-                        <MenuContainerLink url="/" hide={hide}>Karakterek</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Lakhelyek</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Csapatok</MenuContainerLink>
-                        <MenuContainerLink url="/" hide={hide}>Klánok</MenuContainerLink>
+                        <MenuLink url="/" hide={hide}>Karakterek</MenuLink>
+                        <MenuLink url="/" hide={hide}>Lakhelyek</MenuLink>
+                        <MenuLink url="/" hide={hide}>Csapatok</MenuLink>
+                        <MenuLink url="/" hide={hide}>Klánok</MenuLink>
                     </MenuContainer>
                 </MenuItem>
-            </PopupMenu>
+            </MenuSlide>
             <MobileButton toggle={toggle} open={open}>
-                <Line cls="line1" />
-                <Line cls="line2" />
+                <ButtonLine cls="line1" />
+                <ButtonLine cls="line2" />
             </MobileButton>
-        </Menu>
+        </FixMenu>
     );
 }
 
