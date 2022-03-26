@@ -5,29 +5,29 @@ function ToggleMode() {
     const [darkMode, setDarkMode] = useState(false);
 
     const ActiveMode = async () => {
-        setDarkMode(!darkMode);
-        const body = document.body;
 
+        setDarkMode(!darkMode);
+        
         if (darkMode === true) {
-            body.classList.add('light-mode');
-            body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
             await localStorage.setItem('theme', 'light-mode');
         } else {
-            body.classList.add('dark-mode');
-            body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
             await localStorage.setItem('theme', 'dark-mode');
         }
+
     }
 
     useEffect(() => {
-        const body = document.body;
         if (localStorage.getItem('theme') === 'light-mode') {
-            body.classList.add('light-mode');
+        document.body.classList.add('light-mode');
         } else if (localStorage.getItem('theme') === 'dark-mode') {
-            body.classList.add('dark-mode');
-            setDarkMode(!darkMode);
+        document.body.classList.add('dark-mode');
+        setDarkMode(!darkMode);
         }
-    }, [darkMode]);
+    }, [!darkMode]);
 
     return (
         <div className="toggle-mode" onClick={ActiveMode}>
